@@ -77,7 +77,7 @@ def run():
             f'{METABASE_URL}/api/dataset',
             headers={'x-api-key': API_KEY, 'Content-Type': 'application/json'},
             json={'database': DB_ID, 'type': 'native', 'native': {'query': SQL}},
-            timeout=30
+            timeout=120
         )
         resp.raise_for_status()
         data = resp.json()
@@ -105,6 +105,8 @@ def run():
 
     # Git commit & push
     try:
+        subprocess.run(['git', 'config', 'user.email', 'product_analytics@wiom.in'], cwd=script_dir, check=True)
+        subprocess.run(['git', 'config', 'user.name', 'Wiom Analytics'], cwd=script_dir, check=True)
         subprocess.run(['git', 'add', 'payment_metrics.json'], cwd=script_dir, check=True)
         subprocess.run(
             ['git', 'commit', '-m', f'chore: refresh metrics {now_ist}'],
