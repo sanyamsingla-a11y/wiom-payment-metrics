@@ -6,12 +6,14 @@ Called by the local Claude Code scheduled task.
 
 import requests
 import json
+import os
 import subprocess
 import sys
 from datetime import datetime, timezone, timedelta
 
 METABASE_URL = 'https://metabase.wiom.in'
-API_KEY = 'mb_Uo6NCJismo2/x7Aupcy8LC+eABj7/iF6+1dF+LamMKI='
+# Reads from env var when running in GitHub Actions; falls back to hardcoded for local use
+API_KEY = os.environ.get('METABASE_API_KEY', 'mb_Uo6NCJismo2/x7Aupcy8LC+eABj7/iF6+1dF+LamMKI=')
 DB_ID = 113
 
 SQL = """
