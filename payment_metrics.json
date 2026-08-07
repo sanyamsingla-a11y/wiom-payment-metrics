@@ -1,9 +1,9 @@
 {
-  "generated_at_ist": "2026-08-07 05:39 IST",
-  "hour_ist": "2026-08-07T04:00:00+05:30",
-  "total_successful": 2,
-  "first_attempt_count": 1,
-  "first_attempt_pct": 50.0,
-  "status": "ALERT",
+  "generated_at_ist": "2026-08-07 09:24 IST",
+  "hour_ist": "2026-08-07T08:00:00+05:30",
+  "total_successful": 14,
+  "first_attempt_count": 14,
+  "first_attempt_pct": 100.0,
+  "status": "OK",
   "error": null
 }
