@@ -1,8 +1,8 @@
 {
-  "generated_at_ist": "2026-10-02 10:47 IST",
-  "hour_ist": "2026-10-02T09:00:00+05:30",
-  "total_successful": 57,
-  "first_attempt_count": 57,
+  "generated_at_ist": "2026-10-02 17:49 IST",
+  "hour_ist": "2026-10-02T16:00:00+05:30",
+  "total_successful": 18,
+  "first_attempt_count": 18,
   "first_attempt_pct": 100.0,
   "status": "OK",
   "error": null
