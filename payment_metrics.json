@@ -1,9 +1,9 @@
 {
-  "generated_at_ist": "2026-10-22 04:39 IST",
+  "generated_at_ist": "2026-10-22 09:51 IST",
   "hour_ist": null,
   "total_successful": null,
   "first_attempt_count": null,
   "first_attempt_pct": null,
   "status": "ERROR",
-  "error": "HTTPSConnectionPool(host='metabase.wiom.in', port=443): Max retries exceeded with url: /api/dataset (Caused by ConnectTimeoutError(<HTTPSConnection(host='metabase.wiom.in', port=443) at 0x7ffbc32aab10>, 'Connection to metabase.wiom.in timed out. (connect timeout=120)'))"
+  "error": "HTTPSConnectionPool(host='metabase.wiom.in', port=443): Max retries exceeded with url: /api/dataset (Caused by ConnectTimeoutError(<HTTPSConnection(host='metabase.wiom.in', port=443) at 0x7f705a8f3510>, 'Connection to metabase.wiom.in timed out. (connect timeout=120)'))"
 }
